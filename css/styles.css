@@ -499,6 +499,8 @@ address {
 .btn-list:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .current {
@@ -526,9 +528,16 @@ address {
 }
 
 .portfolio-picture {
+  display: block;
   flex-basis: calc(100% / 3 -30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio-picture:hover,
+.portfolio-picture:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .caption {

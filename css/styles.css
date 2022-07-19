@@ -401,6 +401,9 @@ button:focus {
 /* Footer */
 
 .footer {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -555,8 +558,8 @@ address {
 
 .portfolio-picture:hover,
 .portfolio-picture:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .caption {

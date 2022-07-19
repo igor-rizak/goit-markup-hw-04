@@ -121,6 +121,11 @@ img {
   fill: var(--accent-color);
 }
 
+.site:hover,
+.site:focus {
+  color: var(--accent-color);
+}
+
 .accent {
   color: var(--accent-color);
 }
@@ -426,6 +431,11 @@ address {
   color: #ffffff;
 }
 
+.maps:hover,
+.maps:focus {
+  color: var(--accent-color);
+}
+
 .footer-icon {
   width: 20px;
   height: 20px;
@@ -459,6 +469,15 @@ address {
 
 .list-link-footer:last-child {
   margin-bottom: 0;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 
 /* PORTFOLIO */

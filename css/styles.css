@@ -106,25 +106,22 @@ img {
   width: 16px;
   height: 10px;
   margin-right: 10px;
-  fill: var(--title-text-color);
+  fill: inherit;
 }
 
-.mail-icon:hover,
-.mail-icon:focus {
+.mail:hover,
+.mail:focus {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .smartphone:hover,
 .smartphone:focus {
+  color: var(--accent-color);
   fill: var(--accent-color);
 }
 
 .accent {
-  color: var(--accent-color);
-}
-
-.link:hover,
-.link:focus {
   color: var(--accent-color);
 }
 
@@ -150,7 +147,7 @@ img {
 /* Section main */
 
 .section-main {
-  max-width: 1200px;
+  max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -204,15 +201,15 @@ button:focus {
 
 /* Section desc*/
 .desc-contain {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
+  width: 70px;
+  height: 70px;
 }
 
 .section-desc {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-desk {
@@ -224,11 +221,22 @@ button:focus {
   width: 270px;
 }
 
+.desk-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .title-desc {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -245,7 +253,6 @@ button:focus {
 }
 
 .subject > .container {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -255,7 +262,6 @@ button:focus {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .subject-list {
@@ -280,6 +286,7 @@ button:focus {
 
 .link-icon:hover,
 .link-icon:focus {
+  fill: #ffffff;
   background-color: var(--accent-color);
 }
 
@@ -295,15 +302,17 @@ button:focus {
 }
 
 .section-user {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background: #f5f4fa;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .user-container {
   display: flex;
+}
+
+.user-link {
+  gap: 10px;
 }
 
 .user-picture {
@@ -341,20 +350,18 @@ button:focus {
 
 /* CLIENTS */
 
-/* .section-clients {
+.section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
-} */
+}
 
 .clients {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .client-box {
-  box-sizing: border-box;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -364,23 +371,38 @@ button:focus {
   justify-content: center;
 }
 
+.client-box:focus,
+.client-box:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .client-icon {
+  width: 170px;
+  height: 92px;
   fill: #afb1b8;
 }
 
 .client-icon:hover,
 .client-icon:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-boxc:focus {
+  border: var(--accent-color);
 }
 
 /* Footer */
 
 .footer {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .footer-adress {
@@ -416,12 +438,10 @@ address {
 
 .footer-block {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 70px;
 }
 
@@ -472,6 +492,13 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding: 6px 22px;
+}
+
+.btn-list:hover,
+.btn-list:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 
 .current {

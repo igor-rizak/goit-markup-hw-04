@@ -224,7 +224,6 @@ button:focus {
 
 .list-info {
   width: 270px;
-  height: 120px;
 }
 
 .desk-icon {
@@ -233,7 +232,7 @@ button:focus {
   justify-content: center;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 0;
+  height: 120px;
 }
 
 .title-desc {
@@ -254,7 +253,6 @@ button:focus {
 /* Section subject*/
 
 .section-subject {
-  padding-top: 118px;
   padding-bottom: 94px;
 }
 
@@ -282,10 +280,11 @@ button:focus {
 
 .link-icon {
   background: rgba(255, 255, 255, 0.1);
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   text-align: center;
-  padding: 12px 12px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -321,6 +320,7 @@ button:focus {
 .user-link {
   padding-left: 0;
   justify-content: center;
+  gap: 10px;
 }
 
 .user-picture {
@@ -344,7 +344,7 @@ button:focus {
 .title-user {
   font-weight: 500;
   font-size: 16px;
-  line-height: px1.19;
+  line-height: 1.19;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -418,8 +418,8 @@ button:focus {
 }
 
 .footer-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-adress {
@@ -472,7 +472,10 @@ address {
 }
 
 .join-footer {
+  color: #ffffff;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .list-link-footer {
